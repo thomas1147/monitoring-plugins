@@ -48,6 +48,7 @@
 #  mountlist \
 #  regex \
 #  setenv \
+#  snippet/c++defs \
 #  strcase \
 #  strcasestr \
 #  strsep \
