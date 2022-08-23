@@ -1,0 +1,232 @@
+malloc/dynarray_at_failure.o: malloc/dynarray_at_failure.c libc-config.h \
+  ../config.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features-time64.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/wordsize.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/timesize.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdc-predef.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/cdefs.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/long-double.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/linux/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno-base.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/error_t.h \
+  cdefs.h stdlib.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdlib.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/libc-header-start.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stddef.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/waitflags.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/waitstatus.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/floatn.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/floatn-common.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/locale_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__locale_t.h \
+  sys/types.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/types.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/typesizes.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/time64.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/clock_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/clockid_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/time_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/timer_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdint-intn.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/endian.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/endian.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/endianness.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/byteswap.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/uintn-identity.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/select.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/select.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/sigset_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__sigset_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/struct_timeval.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/struct_timespec.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/pthreadtypes.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/thread-shared-types.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  alloca.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdlib-bsearch.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdlib-float.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/__stddef_max_align_t.h \
+  dynarray.h malloc/dynarray.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stdbool.h \
+  string.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/string.h \
+  strings.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/strings.h \
+  stdio.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdio.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stdarg.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__fpos_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__mbstate_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__fpos64_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__FILE.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/FILE.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/struct_FILE.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/cookie_io_functions_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdio_lim.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdio.h
+
+libc-config.h:
+
+../config.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features-time64.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/timesize.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdc-predef.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/cdefs.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/long-double.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/linux/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno-base.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/error_t.h:
+
+cdefs.h:
+
+stdlib.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdlib.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/libc-header-start.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stddef.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/waitflags.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/waitstatus.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/floatn.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/floatn-common.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/locale_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__locale_t.h:
+
+sys/types.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/types.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/time64.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/clock_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/clockid_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/time_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/timer_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdint-intn.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/endian.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/endian.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/endianness.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/byteswap.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/uintn-identity.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/select.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/select.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/sigset_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__sigset_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/struct_timeval.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/struct_timespec.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/pthreadtypes.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/thread-shared-types.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+alloca.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdlib-bsearch.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdlib-float.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/__stddef_max_align_t.h:
+
+dynarray.h:
+
+malloc/dynarray.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stdbool.h:
+
+string.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/string.h:
+
+strings.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/strings.h:
+
+stdio.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdio.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stdarg.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__fpos_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__mbstate_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__fpos64_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__FILE.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/FILE.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/struct_FILE.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/cookie_io_functions_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdio_lim.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/stdio.h:

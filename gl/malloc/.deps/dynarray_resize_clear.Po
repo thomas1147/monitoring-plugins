@@ -1,0 +1,91 @@
+malloc/dynarray_resize_clear.o: malloc/dynarray_resize_clear.c \
+  libc-config.h ../config.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features-time64.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/wordsize.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/timesize.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdc-predef.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/cdefs.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/long-double.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/linux/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno-base.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/error_t.h \
+  cdefs.h dynarray.h malloc/dynarray.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stdbool.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stddef.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/__stddef_max_align_t.h \
+  string.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/string.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/libc-header-start.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/locale_t.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__locale_t.h \
+  strings.h \
+  /home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/strings.h
+
+libc-config.h:
+
+../config.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/features-time64.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/timesize.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/stdc-predef.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/sys/cdefs.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/bits/long-double.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/linux/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/any-linux-any/asm-generic/errno-base.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/error_t.h:
+
+cdefs.h:
+
+dynarray.h:
+
+malloc/dynarray.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stdbool.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/stddef.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/include/__stddef_max_align_t.h:
+
+string.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/string.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/libc-header-start.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/locale_t.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/bits/types/__locale_t.h:
+
+strings.h:
+
+/home/rincewind/Downloads/zig/zig-linux-x86_64-0.9.1/lib/libc/include/generic-glibc/strings.h:
