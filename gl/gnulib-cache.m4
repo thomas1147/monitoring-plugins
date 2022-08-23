@@ -30,74 +30,33 @@
 # gnulib-tool --import \
 #  --lib=libgnu \
 #  --source-base=gl \
-#  --m4-base=gl/m4 \
+#  --m4-base=gl \
 #  --doc-base=doc \
 #  --tests-base=tests \
 #  --aux-dir=build-aux \
 #  --no-conditional-dependencies \
-#  --no-libtool \
+#  --libtool \
 #  --macro-prefix=gl \
-#  --no-vc-files \
-#  base64 \
-#  crypto/sha1 \
-#  dirname \
-#  environ \
-#  floorf \
-#  fsusage \
-#  getaddrinfo \
-#  gethostname \
-#  getloadavg \
-#  getopt-gnu \
-#  gettext \
-#  idpriv-droptemp \
-#  mountlist \
-#  regex \
-#  setenv \
-#  snippet/c++defs \
-#  strcase \
-#  strcasestr \
-#  strsep \
-#  timegm \
-#  unsetenv \
-#  vasprintf \
-#  vsnprintf
+#  --m4-base=./gl \
+#  --source-base=gl \
+#  snippet/c++defs
 
 # Specification in the form of a few gnulib-tool.m4 macro invocations:
 gl_LOCAL_DIR([])
 gl_MODULES([
-  base64
-  crypto/sha1
-  dirname
-  environ
-  floorf
-  fsusage
-  getaddrinfo
-  gethostname
-  getloadavg
-  getopt-gnu
-  gettext
-  idpriv-droptemp
-  mountlist
-  regex
-  setenv
+  --m4-base=./gl
+  --source-base=gl
   snippet/c++defs
-  strcase
-  strcasestr
-  strsep
-  timegm
-  unsetenv
-  vasprintf
-  vsnprintf
 ])
 gl_AVOID([])
 gl_SOURCE_BASE([gl])
-gl_M4_BASE([gl/m4])
+gl_M4_BASE([gl])
 gl_PO_BASE([])
 gl_DOC_BASE([doc])
 gl_TESTS_BASE([tests])
 gl_LIB([libgnu])
 gl_MAKEFILE_NAME([])
+gl_LIBTOOL
 gl_MACRO_PREFIX([gl])
 gl_PO_DOMAIN([])
 gl_WITNESS_C_MACRO([])
-gl_VC_FILES([false])
