@@ -87,7 +87,6 @@ NP-VERSION-FILE
 /gl/sys
 /gl/time.h
 /gl/unistd.h
-/gl/warn-on-use.h
 /gl/wchar.h
 /gl/wctype.h
 
