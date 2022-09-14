@@ -39,7 +39,7 @@
 #  --macro-prefix=gl \
 #  --no-vc-files \
 #  base64 \
-#  crypto/sha1 \
+#  crypto/sha256 \
 #  dirname \
 #  environ \
 #  floorf \
@@ -65,7 +65,7 @@
 gl_LOCAL_DIR([])
 gl_MODULES([
   base64
-  crypto/sha1
+  crypto/sha256
   dirname
   environ
   floorf
