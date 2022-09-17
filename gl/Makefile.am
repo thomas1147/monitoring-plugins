@@ -34,7 +34,6 @@
 #  --macro-prefix=gl \
 #  --no-vc-files \
 #  base64 \
-#  crypto/sha256 \
 #  dirname \
 #  environ \
 #  floorf \
@@ -179,26 +178,6 @@ endif
 
 ## end   gnulib module btowc
 
-## begin gnulib module byteswap
-
-BUILT_SOURCES += $(BYTESWAP_H)
-
-# We need the following in order to create <byteswap.h> when the system
-# doesn't have one.
-if GL_GENERATE_BYTESWAP_H
-byteswap.h: byteswap.in.h $(top_builddir)/config.status
-	$(gl_V_at)$(SED_HEADER_TO_AT_t) $(srcdir)/byteswap.in.h
-	$(AM_V_at)mv $@-t $@
-else
-byteswap.h: $(top_builddir)/config.status
-	rm -f $@
-endif
-MOSTLYCLEANFILES += byteswap.h byteswap.h-t
-
-EXTRA_DIST += byteswap.in.h
-
-## end   gnulib module byteswap
-
 ## begin gnulib module calloc-gnu
 
 
@@ -232,28 +211,6 @@ libgnu_a_SOURCES += close.c
 endif
 
 ## end   gnulib module close
-
-## begin gnulib module crypto/af_alg
-
-libgnu_a_SOURCES += af_alg.c
-
-EXTRA_DIST += af_alg.h sys-limits.h
-
-## end   gnulib module crypto/af_alg
-
-## begin gnulib module crypto/sha256
-
-libgnu_a_SOURCES += sha256-stream.c
-
-## end   gnulib module crypto/sha256
-
-## begin gnulib module crypto/sha256-buffer
-
-libgnu_a_SOURCES += sha256.c
-
-EXTRA_DIST += gl_openssl.h sha256.h
-
-## end   gnulib module crypto/sha256-buffer
 
 ## begin gnulib module dirname
 
@@ -417,16 +374,6 @@ EXTRA_DIST += fd-hook.h
 
 ## end   gnulib module fd-hook
 
-## begin gnulib module fflush
-
-if GL_COND_OBJ_FFLUSH
-libgnu_a_SOURCES += fflush.c
-endif
-
-EXTRA_DIST += stdio-impl.h
-
-## end   gnulib module fflush
-
 ## begin gnulib module filename
 
 
@@ -498,24 +445,6 @@ EXTRA_libgnu_a_SOURCES += fopen.c
 
 ## end   gnulib module fopen-gnu
 
-## begin gnulib module fpurge
-
-if GL_COND_OBJ_FPURGE
-libgnu_a_SOURCES += fpurge.c
-endif
-
-EXTRA_DIST += stdio-impl.h
-
-## end   gnulib module fpurge
-
-## begin gnulib module freading
-
-libgnu_a_SOURCES += freading.c
-
-EXTRA_DIST += freading.h stdio-impl.h
-
-## end   gnulib module freading
-
 ## begin gnulib module free-posix
 
 if GL_COND_OBJ_FREE
@@ -523,24 +452,6 @@ libgnu_a_SOURCES += free.c
 endif
 
 ## end   gnulib module free-posix
-
-## begin gnulib module fseek
-
-if GL_COND_OBJ_FSEEK
-libgnu_a_SOURCES += fseek.c
-endif
-
-## end   gnulib module fseek
-
-## begin gnulib module fseeko
-
-if GL_COND_OBJ_FSEEKO
-libgnu_a_SOURCES += fseeko.c
-endif
-
-EXTRA_DIST += stdio-impl.h
-
-## end   gnulib module fseeko
 
 ## begin gnulib module fstat
 
@@ -563,24 +474,6 @@ endif
 EXTRA_DIST += fsusage.h
 
 ## end   gnulib module fsusage
-
-## begin gnulib module ftell
-
-if GL_COND_OBJ_FTELL
-libgnu_a_SOURCES += ftell.c
-endif
-
-## end   gnulib module ftell
-
-## begin gnulib module ftello
-
-if GL_COND_OBJ_FTELLO
-libgnu_a_SOURCES += ftello.c
-endif
-
-EXTRA_DIST += stdio-impl.h
-
-## end   gnulib module ftello
 
 ## begin gnulib module gen-header
 
@@ -946,14 +839,6 @@ endif
 libgnu_a_SOURCES += glthread/lock.h glthread/lock.c
 
 ## end   gnulib module lock
-
-## begin gnulib module lseek
-
-if GL_COND_OBJ_LSEEK
-libgnu_a_SOURCES += lseek.c
-endif
-
-## end   gnulib module lseek
 
 ## begin gnulib module malloc-gnu
 
