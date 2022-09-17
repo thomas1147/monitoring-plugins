@@ -33,6 +33,8 @@
 #include <unistd.h>
 #include <sys/types.h>
 
+#include <openssl/evp.h>
+
 #define np_free(ptr) { if(ptr) { free(ptr); ptr = NULL; } }
 
 monitoring_plugin *this_monitoring_plugin=NULL;
@@ -402,25 +404,41 @@ int mp_translate_state (char *state_text) {
  * parse of argv, so that uniqueness in parameters are reflected there.
  */
 char *_np_state_generate_key() {
-	struct sha1_ctx ctx;
-	int i;
+	EVP_MD_CTX *mdctx = NULL;
 	char **argv = this_monitoring_plugin->argv;
-	unsigned char result[20];
-	char keyname[41];
+
+	unsigned char *result = NULL;
+	unsigned int result_length = 0;
+
+	const unsigned int output_string_length = 2 * 256 + 1;
+
+	char keyname[output_string_length];
 	char *p=NULL;
 
-	sha1_init_ctx(&ctx);
+	if((mdctx = EVP_MD_CTX_new()) == NULL)
+		die(STATE_UNKNOWN, _("Failed to create EVP MD context"));
+
+	if(1 != EVP_DigestInit_ex(mdctx, EVP_sha256(), NULL))
+		die(STATE_UNKNOWN, _("Failed to initialized EVP MD context"));
 	
-	for(i=0; i<this_monitoring_plugin->argc; i++) {
-		sha1_process_bytes(argv[i], strlen(argv[i]), &ctx);
+	for(unsigned int i=0; i<this_monitoring_plugin->argc; i++) {
+		if(1 != EVP_DigestUpdate(mdctx, argv[i], strlen(argv[i])))
+			die(STATE_UNKNOWN, _("Failed to compute hash"));
+
 	}
 
-	sha1_finish_ctx(&ctx, &result);
+	if((result = (unsigned char *)OPENSSL_malloc(EVP_MD_size(EVP_sha256()))) == NULL)
+		die(STATE_UNKNOWN, _("Failed to allocate result string"));
+
+	if(1 != EVP_DigestFinal_ex(mdctx, result, &result_length))
+		die(STATE_UNKNOWN, _("Failed to finish hashing"));
+
+	EVP_MD_CTX_free(mdctx);
 	
-	for (i=0; i<20; ++i) {
+	for (unsigned int i=0; i<256; ++i) {
 		sprintf(&keyname[2*i], "%02x", result[i]);
 	}
-	keyname[40]='\0';
+	keyname[2 * 256]='\0';
 	
 	p = strdup(keyname);
 	if(p==NULL) {
